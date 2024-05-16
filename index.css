@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(list.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+  background-color: white;
+  width: 50%; 
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px black;
+  margin-bottom: 10px;
+}
+
+#input-task{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 90%;
+   
+}
+
+#add-task{
+  font-size: 1rem;
+  padding: 2px;  
+}
+#task-container{
+    width: 50%;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px ;
+    background-color: white;
+    width: 100%; 
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px black;
+}
+
+.task li{
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+
+}
+
+.check-btn, .delete-btn{
+    flex: 1;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 1rem;
+    
+}
+
+.check-btn{
+    color: green;
+
+}
+
+.delete-btn{
+    color: red;
+}
+.check-btn:hover, :active{
+    background-color: green;
+    color: white;
+}
+
+.delete-btn:hover,:active{
+    background-color: red;
+    color: white;
+}
